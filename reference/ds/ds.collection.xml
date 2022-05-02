@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
 
-<phpdoc:classref xml:id="class.ds-collection" xmlns:phpdoc="http://php.net/ns/phpdoc" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+<phpdoc:classref xml:id="class.ds-collection"
+                 xmlns:phpdoc="http://php.net/ns/phpdoc"
+                 xmlns="http://docbook.org/ns/docbook"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xi="http://www.w3.org/2001/XInclude">
 
  <title>The Collection interface</title>
- <titleabbrev>Collection</titleabbrev>
+ <titleabbrev>Ds\Collection</titleabbrev>
 
  <partintro>
 
@@ -23,24 +27,40 @@
    &reftitle.interfacesynopsis;
 
 <!-- {{{ Synopsis -->
-   <classsynopsis>
+   <interfacesynopsis>
     <ooclass><classname>Ds\Collection</classname></ooclass>
 
-<!-- {{{ Class synopsis -->
-    <classsynopsisinfo>
+    <interfacesynopsisinfo>
+     <ooclass>
+      <classname>Ds\Collection</classname>
+     </ooclass>
 
-    <ooclass><classname>Ds\Collection</classname></ooclass>
+     <oointerface>
+      <modifier>extends</modifier>
+      <interfacename>Traversable</interfacename>
+     </oointerface>
+     <oointerface>
+      <interfacename>Countable</interfacename>
+     </oointerface>
+     <oointerface>
+      <interfacename>JsonSerializable</interfacename>
+     </oointerface>
+    </interfacesynopsisinfo>
 
-    <oointerface><interfacename>Countable</interfacename></oointerface>
-    <oointerface><interfacename>IteratorAggregate</interfacename></oointerface>
-    <oointerface><interfacename>JsonSerializable</interfacename></oointerface>
+    <interfacesynopsisinfo role="comment">&Methods;</interfacesynopsisinfo>
+    <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.ds-collection')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[not(@role='procedural')])">
+     <xi:fallback/>
+    </xi:include>
 
-    </classsynopsisinfo>
-<!-- }}} -->
+    <interfacesynopsisinfo role="comment">Inherited methods</interfacesynopsisinfo>
+    <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.countable')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[not(@role='procedural') and not(modifier='private')])">
+     <xi:fallback/>
+    </xi:include>
+    <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.jsonserializable')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[not(@role='procedural') and not(modifier='private')])">
+     <xi:fallback/>
+    </xi:include>
 
-    <classsynopsisinfo role="comment">&Methods;</classsynopsisinfo>
-    <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.ds-collection')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[not(@role='procedural')])" />
-   </classsynopsis>
+   </interfacesynopsis>
 <!-- }}} -->
 
   </section>
