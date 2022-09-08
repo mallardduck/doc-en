@@ -27,10 +27,10 @@
    &reftitle.interfacesynopsis;
 
 <!-- {{{ Synopsis -->
-   <interfacesynopsis>
+   <classsynopsis>
     <ooclass><classname>Ds\Collection</classname></ooclass>
 
-    <interfacesynopsisinfo>
+    <classsynopsisinfo>
      <ooclass>
       <classname>Ds\Collection</classname>
      </ooclass>
@@ -45,14 +45,14 @@
      <oointerface>
       <interfacename>JsonSerializable</interfacename>
      </oointerface>
-    </interfacesynopsisinfo>
+    </classsynopsisinfo>
 
-    <interfacesynopsisinfo role="comment">&Methods;</interfacesynopsisinfo>
+    <classsynopsisinfo role="comment">&Methods;</classsynopsisinfo>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.ds-collection')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[not(@role='procedural')])">
      <xi:fallback/>
     </xi:include>
 
-    <interfacesynopsisinfo role="comment">Inherited methods</interfacesynopsisinfo>
+    <classsynopsisinfo role="comment">Inherited methods</classsynopsisinfo>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.countable')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[not(@role='procedural') and not(modifier='private')])">
      <xi:fallback/>
     </xi:include>
@@ -60,7 +60,7 @@
      <xi:fallback/>
     </xi:include>
 
-   </interfacesynopsis>
+   </classsynopsis>
 <!-- }}} -->
 
   </section>
